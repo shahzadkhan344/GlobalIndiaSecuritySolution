@@ -1,0 +1,301 @@
+@media (max-width: 768px) {
+    .navbar-items {
+        display: none;
+        width: 50%;
+        height: 100%;
+        justify-content: space-between;
+        flex-direction: column;
+        position: absolute;
+        top: -20px;
+        left: 0;
+        position: fixed;
+        background-color: #212121;
+        padding: 10px;
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    }
+
+    .logo {
+        margin-left: -27px;
+        width: 147px;
+    }
+
+
+    .navbar-toggle {
+        display: block;
+        cursor: pointer;
+        position: fixed;
+        font-size: 35px;
+        z-index: 1001;
+        margin-right: 280px;
+        margin-top: 24px;
+    }
+
+
+
+    .navbar-toggle:hover {
+        color: #fff;
+    }
+
+    .navbar-items.show {
+        display: flex;
+    }
+
+    .list-items {
+        flex-direction: column;
+        gap: 0px;
+        margin-top: 100px;
+        color: #fff;
+    }
+
+    .navbar-items li a {
+        color: #fff;
+    }
+
+    .dropdown {
+        left: 0;
+        width: 100%;
+        top: 26%;
+    }
+
+    .dropdown li a {
+        color: #212121;
+    }
+
+    .service {
+        top: 49%;
+        margin-top: -110px;
+    }
+
+    .btn button {
+        position: absolute;
+        margin-top: -100px;
+        margin-left: 64px;
+    }
+}
+
+@media (max-width: 768px) {
+    .slider-container {
+        width: 100%;
+    }
+
+    .slide {
+
+        height: 80vh;
+
+    }
+
+    .nav {
+        display: none;
+    }
+
+    #btn {
+        height: 50px;
+        width: 160px;
+    }
+
+    #btn1 {
+        height: 50px;
+        width: 160px;
+    }
+
+    h1.text2 {
+        font-size: 2rem;
+    }
+}
+
+@media (max-width: 768px) {
+
+    .about-us {
+        display: flex;
+        flex-direction: column;
+        margin-top: -100px;
+    }
+
+    .about-us h5 {
+        color: #000;
+        font-size: 20px;
+        font-weight: 600;
+        font-family: math;
+        text-align: center;
+    }
+
+    .about-us h6 {
+        font-size: 18px;
+        font-weight: 600;
+        font-family: math;
+        text-align: center;
+    }
+
+    .about-us p {
+        font-size: 12px;
+        text-align: start;
+    }
+
+}
+
+
+@media (max-width: 768px) {
+
+    .vip-security {
+        margin-top: 100px;
+        flex-direction: column;
+        margin-bottom: 100px;
+    }
+
+    .vip-security h3 {
+        margin-top: 15px;
+        text-align: center;
+    }
+
+    .vip-security p {
+        font-size: 13px;
+    }
+
+
+}
+
+@media (max-width: 768px) {
+
+    .bouncer {
+        flex-direction: column;
+        margin-bottom: 100px;
+        gap: 20px;
+    }
+
+    .bouncer p {
+        font-size: 13px;
+        margin-top: 10px;
+    }
+
+    .bouncer .para {
+        padding: 0px;
+    }
+}
+
+@media (max-width: 768px) {
+    .content .box {
+        width: 100%;
+    }
+}
+
+@media (max-width: 768px) {
+    .container {
+        flex-direction: column;
+        align-items: center;
+    }
+    .main-content, .sidebar {
+        flex: 1;
+        width: 100%;
+        padding: 10px;
+    }
+}
+
+@media (max-width: 768px) {
+    .container {
+        flex-direction: column;
+        align-items: center;
+    }
+    .column {
+        padding: 10px 0;
+        text-align: center;
+    }
+}
+
+
+@media (max-width: 768px) {
+    .card {
+        width: 45%;
+    }
+}
+
+@media (max-width: 480px) {
+    .card {
+        width: 100%;
+    }
+}
+
+@media (max-width:768px) {
+    .container-values {
+        padding: 0 0px;
+    }    
+    .container-fedral {
+        flex-direction: column;
+    }
+    .content {
+        margin-left: 20px;
+    }
+}
+
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .rbdr {
+        flex-direction: column;
+    }
+
+    .form,
+    .location {
+        max-width: 100%;
+    }
+
+    .input-group div {
+        min-width: 100%;
+    }
+
+    .meeting-btn{
+        margin: 10px 0;
+    }
+
+    .button-schedule-meeting {
+        font-size: 14px;
+        padding: 8px;
+    }
+}
+
+@media (max-width: 480px) {
+    .form-sub {
+        margin-left: 133px;
+        margin-bottom: 50px;
+        font-size: 14px;
+    }
+
+    .meeting-btn{
+        margin: 10px 0;
+    }
+    .button-schedule-meeting {
+        font-size: 12px;
+    }
+
+    .address p {
+        font-size: 12px;
+    }
+    .rbdr form input, textarea {
+        width: 90% !important;
+    }
+    .rbdr form select {
+        width: 90% !important;
+    }
+
+    .name-mail {
+        flex-direction: column;
+    }
+}
+
+@media (max-width:768px) {
+    .container-footer {
+        flex-direction: column;
+        align-items: center;
+    }
+    .training {
+        flex-direction: column;
+    }
+    .clean {
+        flex-direction: column;
+    }
+    .clean p {
+        font-size: 15px;
+    }
+    .container-security {
+        flex-direction: column;
+    }
+}
