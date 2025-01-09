@@ -187,7 +187,7 @@ li a:hover {
 .slider-container {
     position: relative;
     height: 695px;
-    width: 1330px;
+    width: 100%;
     overflow: hidden;
     margin-top: 100px;
 }
