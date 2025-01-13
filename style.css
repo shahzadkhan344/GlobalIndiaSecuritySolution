@@ -8,8 +8,8 @@ body {
 
 .container {
     overflow-x: hidden;
-  }
-  
+}
+
 a {
     text-decoration: none;
     color: #000;
@@ -40,6 +40,7 @@ a {
     transform: scale(1.1);
     box-shadow: 0 6px 10px rgba(0, 0, 0, 0.2);
 }
+
 .navbar {
     position: fixed;
     background-color: rgb(255, 255, 255);
@@ -257,7 +258,7 @@ li a:hover {
     left: 0 !important;
     right: 0 !important;
     bottom: 0 !important;
-    background: rgba(2, 11, 24, 0.85);
+    background: rgba(8, 17, 31, 0.363);
     z-index: 1;
 }
 
@@ -969,6 +970,7 @@ textarea {
     font-size: 18px;
     margin-bottom: 10px;
 }
+
 .column li {
     list-style: none;
 }
@@ -1014,7 +1016,7 @@ textarea {
 }
 
 .footer-end a {
-    color: antiquewhite;
+    color: #ff0202;
     text-decoration: none;
 }
 

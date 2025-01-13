@@ -67,3 +67,95 @@ document.querySelector('.whatsapp-icon').addEventListener('click', () => {
     console.log('WhatsApp icon clicked');
     // Add your analytics tracking code here
 });
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+const images = [
+    "gallary1.jpg",
+    "gallary2.jpg",
+    "gallary3.jpg",
+    "gallary4.jpg",
+    "gallary5.jpg",
+    "gallary6.jpg",
+    "gallary7.jpg",
+    "gallary8.jpg",
+    "gallary9.jpg",
+    "gallary10.jpg",
+    "gallary11.jpg",
+    "gallary12.jpg",
+    "gallary13.jpg",
+    "gallary14.jpg",
+    "gallary15.jpg",
+    "gallary16.jpg",
+    "gallary17.jpg",
+];
+
+let currentindex = 0;
+
+document.getElementById('viewMore').addEventListener('click', () => {
+    document.getElementById('galleryModal').classList.remove('hidden');
+    document.getElementById('modalContent').querySelector('img').src = images[currentIndex];
+});
+
+document.getElementById('closeModal').addEventListener('click', () => {
+    document.getElementById('galleryModal').classList.add('hidden');
+});
+
+document.getElementById('prevImage').addEventListener('click', () => {
+    currentIndex = (currentIndex > 0) ? currentIndex - 1 : images.length - 1;
+    document.getElementById('modalContent').querySelector('img').src = images[currentIndex];
+});
+
+document.getElementById('nextImage').addEventListener('click', () => {
+    currentIndex = (currentIndex < images.length - 1) ? currentIndex + 1 : 0;
+    document.getElementById('modalContent').querySelector('img').src = images[currentIndex];
+});
+
+
+
+
+
+
+
+
+
+
+
+
+
+    document.getElementById("contactForm").addEventListener("submit", async function (event) {
+        event.preventDefault(); // Default form submission ko roko
+
+        const formData = new FormData(event.target);
+        const formObject = Object.fromEntries(formData.entries());
+
+        try {
+            const response = await fetch("http://localhost:3000/send-email", {
+                method: "POST",
+                headers: {
+                    "Content-Type": "application/json",
+                },
+                body: JSON.stringify(formObject),
+            });
+
+            if (response.ok) {
+                alert("Email sent successfully!");
+            } else {
+                alert("Failed to send email. Please try again.");
+            }
+        } catch (error) {
+            console.error("Error:", error);
+            alert("An error occurred. Please try again later.");
+        }
+    });
